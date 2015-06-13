@@ -10,11 +10,11 @@ namespace Hotdog\SpotifyExampleApi;
  */
 trait SpotifyApiAwareTrait
 {
-    /** @var  SpotifyApi */
+    /** @var  SpotifyApiInterface */
     protected $spotifyApi;
 
     /**
-     * @return SpotifyApi
+     * @return SpotifyApiInterface
      */
     public function getSpotifyApi()
     {
@@ -22,10 +22,10 @@ trait SpotifyApiAwareTrait
     }
 
     /**
-     * @param SpotifyApi $spotifyApi
+     * @param SpotifyApiInterface $spotifyApi
      * @return self
      */
-    public function setSpotifyApi(SpotifyApi $spotifyApi)
+    public function setSpotifyApi(SpotifyApiInterface $spotifyApi)
     {
         $this->spotifyApi = $spotifyApi;
         return $this;

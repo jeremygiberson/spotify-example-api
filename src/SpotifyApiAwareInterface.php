@@ -7,12 +7,12 @@ namespace Hotdog\SpotifyExampleApi;
 interface SpotifyApiAwareInterface
 {
     /**
-     * @param SpotifyApi $api
+     * @param SpotifyApiInterface $api
      */
-    public function setSpotifyApi(SpotifyApi $api);
+    public function setSpotifyApi(SpotifyApiInterface $api);
 
     /**
-     * @return SpotifyApi
+     * @return SpotifyApiInterface
      */
     public function getSpotifyApi();
 }
