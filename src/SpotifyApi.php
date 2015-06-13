@@ -5,7 +5,7 @@ namespace Hotdog\SpotifyExampleApi;
 
 use GuzzleHttp\Client;
 
-class SpotifyApi
+class SpotifyApi implements SpotifyApiInterface
 {
     const SPOTIFY_API = 'https://api.spotify.com/v1/';
     const TYPE_TRACK = 'track';

@@ -11,7 +11,7 @@ namespace Hotdog\SpotifyExampleApi;
 trait SpotifyApiAwareTrait
 {
     /** @var  SpotifyApiInterface */
-    protected $spotifyApi;
+    private $spotifyApi;
 
     /**
      * @return SpotifyApiInterface
